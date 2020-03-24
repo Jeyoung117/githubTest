@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="727dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="2dp" >
+
+        <EditText
+            android:id="@+id/userId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:inputType="textPersonName"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/myCash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="My Cash" />
+
+        <EditText
+            android:id="@+id/myBankName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="은행" />
+
+        <Button
+            android:id="@+id/getMyMoney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="잔액 확인" />
+
+        <EditText
+            android:id="@+id/bankName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="은행" />
+
+        <EditText
+            android:id="@+id/accountNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="계좌번호" />
+
+        <EditText
+            android:id="@+id/createAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="금액" />
+
+        <Button
+            android:id="@+id/connectAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="계좌연동" />
+
+        <Button
+            android:id="@+id/createDigitalCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="디지털 수표 생성" />
+
+        <EditText
+            android:id="@+id/myDigitalCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/getMyDigitalCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="디지털 수표 확인" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

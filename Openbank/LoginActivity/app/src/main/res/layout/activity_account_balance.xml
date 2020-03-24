@@ -1,0 +1,96 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--서브타이틀-->
+    <LinearLayout android:id="@+id/llSubTitle" style="@style/SubTitleLayout">
+        <TextView android:id="@+id/tvSubTitle" style="@style/SubTitleText"
+            android:text="Check 잔액조회(account/balance/fin_num)\n- 발행한 Check의 잔액 조회"/>
+    </LinearLayout>
+
+    <!--메인-->
+
+    <!--하단버튼-->
+    <ScrollView
+        android:id="@+id/svMainScroll"
+        style="@style/MainScrollView">
+
+        <LinearLayout
+            android:id="@+id/llMainLayout"
+            style="@style/MainLayout">
+
+            <TableLayout
+                android:id="@+id/tableLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TableRow android:padding="5dip">
+
+                    <LinearLayout style="@style/FormValue02">
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="잔액" />
+
+                        <EditText
+                            android:id="@+id/totalBalance"
+                            style="@style/FormValue02"
+                            android:inputType="text"
+                            android:maxLines="1" />
+
+                        <Button
+                            android:id="@+id/btnSendToken"
+                            style="@style/Button01"
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="1dp"
+                            android:layout_marginEnd="3dp"
+                            android:text="송금" />
+
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow android:padding="5dip"/>
+
+                <TableRow android:padding="5dip"/>
+
+                <TableRow android:padding="5dip">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="충전 후 이용하세요" />
+
+                    <Button
+                        android:id="@+id/btnCharge"
+                        style="@style/Button01"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginEnd="40dp"
+                        android:layout_weight="1"
+                        android:text="발행"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="3dp" />
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout android:id="@+id/llBottomButton" style="@style/BottomButtonLayout">
+        <Button android:id="@+id/btnCancel" style="@style/BottomCancelButton"/>
+        <Button android:id="@+id/btnNext" style="@style/BottomNextButton"/>
+    </LinearLayout>
+
+</RelativeLayout>

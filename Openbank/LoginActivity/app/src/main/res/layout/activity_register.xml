@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <EditText
+        android:id="@+id/idText"
+        android:layout_width="379dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:hint="아이디를 입력하세요"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="43dp" />
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="379dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="비밀번호를 입력하세요"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/idText"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/createDigitalCheck"
+        style="@style/Button01"
+        android:layout_width="379dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="21dp"
+        android:text="회원가입"
+        android:background="@drawable/button_shape_01"
+        app:layout_constraintTop_toBottomOf="@+id/passwordText"
+        tools:layout_editor_absoluteX="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

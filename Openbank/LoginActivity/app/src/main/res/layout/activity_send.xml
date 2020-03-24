@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout android:id="@+id/llSubTitle" style="@style/SubTitleLayout">
+
+        <TextView
+            android:id="@+id/tvSubTitle"
+            style="@style/SubTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="전 송\n- 디지털 수표를 다른이에게 전송 또는 현금으로 환전" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/balanceText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="25dp"
+        android:ems="10"
+        android:hint="전송금액(원)"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/addressText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="25dp"
+        android:ems="10"
+        android:hint="받는 분 계좌번호 또는 연락처 입력"
+        android:inputType="textPersonName" />
+
+
+    <LinearLayout
+        android:id="@+id/lllSubTitle"
+        style="@style/SubTitleLayout"
+        android:layout_height="545dp">
+
+        <Button
+            android:id="@+id/btnCharge"
+            style="@style/Button01"
+            android:layout_width="394dp"
+            android:layout_height="51dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/btnsave"
+            android:text="보내기"
+            android:textSize="20sp"
+            android:textStyle="bold"></Button>
+    </LinearLayout>
+</LinearLayout>
+
+

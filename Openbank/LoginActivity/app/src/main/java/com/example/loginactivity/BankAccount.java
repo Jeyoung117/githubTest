@@ -44,6 +44,7 @@ public class BankAccount {
         return digitalCheck;
     }
 
+
     public void setDigitalCheck(int digitalCheck) {
         this.digitalCheck = digitalCheck;
     }

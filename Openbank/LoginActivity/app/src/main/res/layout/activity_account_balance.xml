@@ -27,7 +27,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp">
 
-                <TableRow android:padding="5dip">
+                <TableRow
+
+                    android:padding="5dip">
 
                     <LinearLayout style="@style/FormValue02">
 
@@ -49,16 +51,18 @@
                             style="@style/Button01"
                             android:layout_width="50dp"
                             android:layout_height="30dp"
-                            android:layout_marginStart="1dp"
-                            android:layout_marginEnd="3dp"
-                            android:text="송금" />
+                            android:text="check 전송" />
+<!--                            android:layout_marginStart="1dp"-->
+<!--                            android:layout_marginEnd="3dp"-->
+
+
 
                     </LinearLayout>
                 </TableRow>
 
-                <TableRow android:padding="5dip"/>
 
-                <TableRow android:padding="5dip"/>
+
+
 
                 <TableRow android:padding="5dip">
 
@@ -68,7 +72,7 @@
                         android:layout_marginStart="30dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="충전 후 이용하세요" />
+                        android:text="발행 후 이용하세요" />
 
                     <Button
                         android:id="@+id/btnCharge"

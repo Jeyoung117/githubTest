@@ -10,7 +10,7 @@
         <TextView
             android:id="@+id/tvSubTitle"
             style="@style/SubTitleText"
-            android:text="등록계좌조회\n- 사용자의 등록 계좌목록을 조회 및 삭제" />
+            android:text="연결계좌조회\n- 사용자의 연결 계좌목록을 조회 및 삭제" />
     </LinearLayout>
 
     <!--메인-->
@@ -24,37 +24,37 @@
                 android:layout_marginTop="30dp">
 
                 <TableRow
+                    android:id="@+id/tablerow1"
                     android:padding="5dip">
 
                     <LinearLayout
                         style="@style/FormValue02">
 
                         <EditText
-                            android:id="@+id/etToken"
+                            android:id="@+id/bankName"
                             style="@style/FormValue02"
+                            android:layout_width="20dp"
                             android:inputType="text"
                             android:maxLines="1"
-                            android:text="우리***8605" />
+                            android:text="우리" />
+
+                        <EditText
+                            android:id="@+id/accountNumber"
+                            style="@style/FormValue02"
+                            android:layout_width="300dp"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:text="" />
                     </LinearLayout>
                 </TableRow>
 
                 <TableRow
-                    android:padding="5dip">
-
-                    <EditText
-                        android:id="@+id/etToken2"
-                        style="@style/FormValue02"
-                        android:layout_width="323dp"
-                        android:layout_height="wrap_content"
-                        android:inputType="text"
-                        android:maxLines="1"
-                        android:text="신한***4510" />
-                </TableRow>
+                    android:padding="5dip"/>
 
             </TableLayout>
 
             <Button
-                android:id="@+id/btnSelectToken"
+                android:id="@+id/btnAddAcount"
                 style="@style/Button01"
                 android:layout_width="283dp"
                 android:layout_height="wrap_content"

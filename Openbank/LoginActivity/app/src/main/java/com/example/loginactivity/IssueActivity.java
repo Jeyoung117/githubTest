@@ -11,6 +11,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.LoginActivity.R;
+
 import io.realm.Realm;
 import okhttp3.ResponseBody;
 import retrofit2.Call;
@@ -62,10 +64,6 @@ public class IssueActivity extends AppCompatActivity {
                 String BankName = spinner.getSelectedItem().toString();
                 //final String cgha = chargeText.getText().toString();
                 final String amounts = chargeText.getText().toString();
-
-
-                //final String account = accountNumber.getText().toString();
-
 
                 EndorsementDB endorsementDB = realm.where(EndorsementDB.class).equalTo("userId", userId).findFirst();
                 Log.d("Enrollment >>>>>>>> ", endorsementDB.getStrEndorsement() + " ################ " + BankName);

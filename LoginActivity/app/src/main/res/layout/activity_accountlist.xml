@@ -1,0 +1,74 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--서브타이틀-->
+    <LinearLayout android:id="@+id/llSubTitle" style="@style/SubTitleLayout">
+
+        <TextView
+            android:id="@+id/tvSubTitle"
+            style="@style/SubTitleText"
+            android:text="연결계좌조회\n- 사용자의 연결 계좌목록을 조회 및 삭제" />
+    </LinearLayout>
+
+    <!--메인-->
+    <ScrollView android:id="@+id/svMainScroll" style="@style/MainScrollView">
+        <LinearLayout android:id="@+id/llMainLayout" style="@style/MainLayout">
+
+            <TableLayout
+                android:id="@+id/tableLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <TableRow
+                    android:id="@+id/tablerow1"
+                    android:padding="5dip">
+
+                    <LinearLayout
+                        style="@style/FormValue02">
+
+                        <EditText
+                            android:id="@+id/bankName"
+                            style="@style/FormValue02"
+                            android:layout_width="20dp"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:text="우리" />
+
+                        <EditText
+                            android:id="@+id/accountNumber"
+                            style="@style/FormValue02"
+                            android:layout_width="300dp"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:text="" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:padding="5dip"/>
+
+            </TableLayout>
+
+            <Button
+                android:id="@+id/btnAddAcount"
+                style="@style/Button01"
+                android:layout_width="283dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="3dp"
+                android:text="+계좌 추가하기" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!--하단버튼-->
+    <LinearLayout android:id="@+id/llBottomButton" style="@style/BottomButtonLayout">
+        <Button android:id="@+id/btnCancel" style="@style/BottomCancelButton"/>
+        <Button android:id="@+id/btnNext" style="@style/BottomNextButton"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--서브타이틀-->
+    <LinearLayout android:id="@+id/llSubTitle" style="@style/SubTitleLayout">
+
+        <TextView
+            android:id="@+id/tvSubTitle"
+            style="@style/SubTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주요 기능 목록" />
+    </LinearLayout>
+
+    <!--메인-->
+    <ScrollView
+        android:id="@+id/svMainScroll"
+        style="@style/MainScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/llMainLayout"
+            style="@style/MainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+<!--            <Button-->
+<!--                android:id="@+id/btnInqrUserInfoPage"-->
+<!--                style="@style/Button01"-->
+<!--                android:layout_width="280dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_marginStart="8dp"-->
+<!--                android:layout_marginLeft="8dp"-->
+<!--                android:layout_marginTop="50dp"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:layout_marginRight="8dp"-->
+<!--                android:background="@drawable/button_shape_01"-->
+<!--                android:text="사용자정보조회"-->
+<!--               />-->
+
+            <Button
+                android:id="@+id/btnBalancePage"
+                style="@style/Button01"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/button_shape_01"
+                android:text="잔액조회" />
+
+            <Button
+                android:id="@+id/btnIssuePage"
+                style="@style/Button01"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/button_shape_01"
+                android:text="Check 발행" />
+
+            <Button
+                android:id="@+id/btnAccountList"
+                style="@style/Button01"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/button_shape_01"
+                android:text="연동계좌조회" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!--하단버튼-->
+    <LinearLayout android:id="@+id/llBottomButton" style="@style/BottomButtonLayout" android:visibility="gone">
+        <Button android:id="@+id/btnCancel" style="@style/BottomCancelButton"/>
+        <Button android:id="@+id/btnNext" style="@style/BottomNextButton"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--서브타이틀-->
+
+    <LinearLayout android:id="@+id/llSubTitle" style="@style/SubTitleLayout">
+
+        <TextView
+            android:id="@+id/tvSubTitle"
+            style="@style/SubTitleText"
+            android:text="계좌해지\n- 오픈뱅킹에 등록된 계좌를 등록삭제 및 동의해지" />
+    </LinearLayout>
+
+    <!--메인-->
+    <ScrollView android:id="@+id/svMainScroll" style="@style/MainScrollView">
+        <LinearLayout android:id="@+id/llMainLayout" style="@style/MainLayout">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dip">
+
+                    <LinearLayout style="@style/FormValue02">
+
+                        <EditText
+                            android:id="@+id/etToken"
+                            style="@style/FormValue02"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:text="우리***8605" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dip">
+
+                    <EditText
+                        android:id="@+id/etToken2"
+                        style="@style/FormValue02"
+                        android:layout_width="323dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:text="신한***4510" />
+                </TableRow>
+            </TableLayout>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="계좌삭제" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!--하단버튼-->
+
+    <LinearLayout android:id="@+id/llBottomButton" style="@style/BottomButtonLayout">
+        <Button android:id="@+id/btnCancel" style="@style/BottomCancelButton"/>
+        <Button android:id="@+id/btnNext" style="@style/BottomNextButton"/>
+    </LinearLayout>
+
+</RelativeLayout>
